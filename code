@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+#include <stdlib.h>
+void display(int twothousandrupees,int fivehundredrupees,int hundredrupees)
+{
+    printf("-------------ATM-------------\n");
+    printf("DENOMINATIONS   NUMBERS  VALUE\n");
+    printf("2000              %d        %d\n",twothousandrupees,(twothousandrupees*2000));
+    printf("500               %d        %d\n",fivehundredrupees,(fivehundredrupees*500));
+    printf("100               %d        %d\n",hundredrupees,(hundredrupees*100));
+}
+int main()
+{
+    int amounttobeloaded,customers,option;
+    printf("Enter the amount to be loaded\n");
+    scanf("%d",&amounttobeloaded);
+    int twothousandrupees=0,fivehundredrupees=0,hundredrupees=0;
+    printf("Enter the number of twothousandrupees:\n");
+    scanf("%d",&twothousandrupees);
+    printf("Enter the number of fivehundredrupees:\n");
+    scanf("%d",&fivehundredrupees);
+    printf("Enter the number of hundredrupes:\n");
+    scanf("%d",&hundredrupees);
+    display(twothousandrupees,fivehundredrupees,hundredrupees);
+     return 0;
+}
